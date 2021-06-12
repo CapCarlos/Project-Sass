@@ -1,0 +1,371 @@
+//index.html - scss
+
+//RWD max-width:768px
+@mixin mobile {
+    @media (max-width:768px) {
+        @content
+    }
+}
+//mobilc-menu在上層
+@mixin cover-menu-top{
+
+    position:absolute; 
+    top:0px; 
+    left:0; 
+    z-index:2;
+
+}
+//壓在mobilc-menu下層
+@mixin cover-menu-down{
+
+    position:relative; 
+    z-index:1;
+
+}
+
+//設定背景圖片
+@mixin background-cover($url,$x,$y) {
+    
+    background-image: url($url);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: $x $y;
+     
+}
+
+//設定padding-top和padding-bottom
+@mixin padding-set($top,$bottom){
+
+    padding-top: $top;
+    padding-bottom: $bottom;
+    
+
+
+}
+
+//reset ul>li
+.list-reset{
+
+    list-style-type: none; 
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+}
+
+//top-menu
+.nav-color{
+
+    color:#8D8D8D;
+
+    &:hover{
+
+        color:#555555;
+    }
+    &:focus{
+
+        color:#555555;
+    }
+}
+
+//nav圖片設定
+.bgimg{
+
+    @include padding-set(15.4%,15.4%);
+    @include background-cover("../img/index1.jpg",left,top);
+    @include cover-menu-down;
+}
+
+//RWD menu-list style
+.mobile-menu-list{
+
+    background: #909090;
+    li{
+        border-bottom: 1px solid white;
+
+        &.active{
+            background: #575757;
+        }
+        &:hover{
+
+            background: #575757;
+        }
+
+        a{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color:white;
+            font-size: 1.25rem;
+            line-height: 2.5;
+        }
+    }
+    .li-last{
+        border-bottom: 0px;
+    }
+}
+
+
+.btn-outline-light:hover{
+
+    color:white;
+    background: rgba(255, 255, 255, 0.287);
+
+}
+
+.btn-outline-dark:hover{
+
+    color:black;
+    background: rgba(0, 0, 0, 0.287);
+
+}
+
+.product-text{
+
+    @include padding-set(12.1%,12.1%);
+    @include mobile{
+        padding-top: 2%;
+        padding-bottom: 6%;
+    };
+}
+
+.product-img1{
+
+    @include padding-set(12.1%,12.1%);
+    @include background-cover("../img/index2.jpg",center,top);
+    @include mobile{
+        padding-top: 50%;
+        padding-bottom: 50%;
+    };
+}
+
+.product-img2{
+
+    @include padding-set(12.1%,12.1%);
+    @include background-cover("../img/index3.png",center,top);
+    @include mobile{
+        padding-top: 50%;
+        padding-bottom: 50%;
+    };
+}
+.product-img3{
+
+    @include padding-set(12.1%,12.1%);
+    @include background-cover("../img/index4.jpg",left,top);
+    @include mobile{
+        padding-top: 50%;
+        padding-bottom: 50%;
+    };
+}
+.product-img4{
+
+    @include padding-set(12.1%,12.1%);
+    @include background-cover("../img/index5.jpg",center,top);
+    @include mobile{
+        padding-top: 99%;
+        padding-bottom: 99%;
+    };
+}
+
+.product-list-img1{
+
+    @include padding-set(61%,61%);
+    @include background-cover("../img/index6.jpg",center,90%);
+    @include mobile{
+        padding-top: 50%;
+        padding-bottom: 50%;
+    };
+}
+.product-list-img2{
+
+    @include padding-set(61%,61%);
+    @include background-cover("../img/index7.jpg",center,center);
+    @include mobile{
+        padding-top: 50%;
+        padding-bottom: 50%;
+    };
+}
+
+.product-list-img3{
+
+    @include padding-set(61%,61%);
+    @include background-cover("../img/index8.jpg",center,center);
+    @include mobile{
+        padding-top: 50%;
+        padding-bottom: 50%;
+    };
+}
+
+
+.product-introduction-img{
+
+    @include padding-set(35%,35%);
+    @include background-cover("../img/index9.jpg",center,center);
+    @include mobile{
+        padding-top: 75%;
+        padding-bottom: 75%;
+    };
+}
+
+
+//舊價格文字設定
+.product-old-price{
+
+    margin-left: 8px;
+}
+
+//圖片變暗
+.bgimg-dark{
+
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url('../img/index8.jpg');
+}
+
+.subscribe-img{
+
+    @include padding-set(16.2%,6%);
+    @include background-cover("../img/index10.jpg",70%,45%);
+    background-size: 120% ;
+    
+}
+//訂閱email高度
+.email-input{
+
+    height: 60px;
+}
+
+.footer-menu{
+
+    font-size: 1.25rem;
+    line-height: 2;
+    color:$light;
+
+    &:hover{
+
+        color:$gray-400;
+
+    }
+}
+
+//滑過商品圖出現陰影
+.product-img:hover{
+
+    -webkit-filter: drop-shadow(3px 3px 5px $gray-600); /* Safari */
+    filter: drop-shadow(3px 3px 5px $gray-600);
+
+}
+
+//RWD nav-menu 769PX以下消失
+.nav-menu{
+
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    
+    @include mobile{
+
+        display: none;
+
+    };
+
+}
+
+//RWD mobile-menu 768PX以上消失
+.nav-logo{
+
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    
+    .mobile-menu{
+        display: none;
+        color:#707070;
+    }
+
+    @include mobile{
+
+        .mobile-menu{
+
+            display: block;
+            
+            i{
+                font-size:200%;
+                color:#707070;
+                padding: 0.5rem;
+                &:hover{
+                    color:#575757;
+                }
+            }
+        }
+        
+
+    };
+
+}
+
+//RWD mobile-cart 768PX以上消失
+.mobile-cart{
+
+
+    display: none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 12%;
+    margin-right: 20px;
+    i{
+
+        position:relative;
+        z-index:1;  
+        color:#8D8D8D;
+
+        &:hover{
+
+            color:#575757;
+        }
+
+        span{
+
+            position:absolute; 
+            top:-0.5rem; 
+            left: 1.3rem; 
+            z-index:2; 
+            font-size:3px;
+        }
+    }
+    @include mobile{
+            display: block
+
+    };
+
+}
+//RWD footer-logo 768PX以下重新排列
+.footer-logo{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include mobile{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    };
+
+}
+
+//RWD footer-menu 768PX以下消失
+.footer-menu{
+
+    
+    
+    @include mobile{
+
+        display: none;
+
+    };
+
+}
+
+
+.mobileMenu-set{
+
+    @include cover-menu-top;
+}
+

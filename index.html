@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<!-- Required meta tags -->
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<title>SCSS 版型管理任務(首頁-index)</title>
+</head>
+<body>
+<!-- nav menu -->
+<div class="container mt-1 mb-1">
+    <div class="row">
+        <!-- top-LOGO area -->
+        <div class="col-12 col-md-2 nav-logo">
+            <!-- LOGO -->
+            <a href="index.html"><img src="img/d’Perfume.png" alt="index-LOGO"></a> 
+            <div class="d-flex justify-content-center ">
+                <!-- mobile-cart -->
+                <a href="#" class="mobile-cart">
+                    <i class="fas fa-shopping-cart fs-3">
+                        <span class="badge rounded-pill bg-primary p-1">3</span>
+                    </i>
+                </a>
+                <!-- mobile-menu -->
+                <a href="#mobileMenu" class="mobile-menu" data-bs-toggle="collapse" >
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>   
+        </div>
+        <!-- top-menu -->
+        <div class="col-md-10 nav-menu">
+            <ul class="nav justify-content-end">
+                <li class="nav-item fs-5">
+                  <a class="nav-link nav-color" aria-current="page" href="product.html"><i class="fas fa-store-alt m-1"></i>Product</a>
+                </li>
+                <li class="nav-item fs-5">
+                  <a class="nav-link nav-color" href="login.html"><i class="fas fa-user m-1"></i>log in</a>
+                </li>
+                <li class="nav-item fs-5">
+                  <a class="nav-link nav-color" href="#"><i class="fas fa-heart m-1"></i>Wishlist</a>
+                </li>
+                <li class="nav-item fs-5">
+                    <a class="nav-link nav-color" href="#"><i class="fas fa-shopping-cart m-1"></i>Cart(3)</a>
+                </li>
+              </ul>
+        </div>
+    </div>
+</div>
+<!-- nav img -->
+<div class="container-fluid bgimg">
+    <div class="container ">
+        <div class="row d-flex flex-row justify-content-end ff-en ">
+            <div class="col-12 col-md-5">
+                <div class="row d-flex flex-column align-items-start ">
+                    <div class="col-md-12 text-light w-100 ">
+                        <h1 class="fs-1 fw-bold lh-base">Perfume your day</h1>
+                        <h2 class="fs-4 fw-light lh-lg">A perfume is like a piece of clothing, a message, a way of presenting oneself a costume that according to the person who wears it.</h2>
+                    </div>
+                    <div class="col-md-10 border-2 ">
+                        <a href="product.html"><button type="button" class="w-100 fs-2 btn btn-outline-light rounded-pill">Shop Now</button></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- top-menu (mobile) --> 
+    <div class="col-12 collapse mobileMenu-set" id="mobileMenu">
+        <div class="card card-body p-0">
+            <ul class="list-reset mobile-menu-list">
+                <li><a href="product.html">Product</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="li-last"><a href="login.html">login</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- product -->
+<div class="container mb_6 mt_6">
+    <ul class="row list-reset">
+        <!-- product 第1列-->
+        <li class="col-12 col-md-6 product-text d-flex justify-content-center align-items-center">
+            <div class="row d-flex flex-column align-items-center">
+                <div class="col-12 col-md-8">
+                    <h1 class="fs-2 fw-bold ff-en lh-lg">Gabrielle CHANEL</h1>
+                    <p class="w-100 fs-4 ff-cn lh-base">全新嗅覺體驗，花香四溢、明亮馥郁。結合茉莉、依蘭依蘭、橙花和最迷人的格拉斯晚香玉之花香，呈現出夢幻花香氣息。 極具女性特質的香奈兒嘉柏麗香水，專為光芒四射的她而生。</p>
+                    <a href="product_page.html" class="text-info text-decoration-none fs-6 fw-bold ff-cn">查看更多</a>
+                </div>
+            </div>
+        </li>
+        <li class="col-12 order-first col-md-6 order-md-last product-img1"></li>
+    </ul>
+    <ul class="row list-reset">
+        <!-- product 第2列-->
+        <li class="col-12 order-first col-md-6 order-md-first product-img2"></li>
+        <li class="col-12 col-md-6 product-text d-flex justify-content-center align-items-center">
+            <div class="row d-flex flex-column align-items-center">
+                <div class="col-12 col-md-8">
+                    <h1 class="fs-2 fw-bold ff-en lh-lg">Five O’clock <br>Au Gingembre</h1>
+                    <p class="w-100 fs-4 ff-cn lh-base">生薑與溫醇的肉桂香、紅糖的香甜摻和成一氣，溫暖微辛的氣息反倒形成一股輕煙氤氳開來，還帶點微微煙醺感漫溢在整個鼻息之間，細聞之下,又還有溫溫淡淡的木香，溫和而暖心。</p>
+                    <a href="product_page.html" class="text-info text-decoration-none fs-6 fw-bold ff-cn">查看更多</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <ul class="row list-reset">
+        <!-- product 第3列-->
+        <li class="col-12 col-md-6 product-text d-flex justify-content-center align-items-center">
+            <div class="row d-flex flex-column align-items-center">
+                <div class="col-12 col-md-8">
+                    <h1 class="fs-2 fw-bold ff-en lh-lg">CHANEL N°5</h1>
+                    <p class="w-100 fs-4 ff-cn lh-base">N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
+                    <a href="product_page.html" class="text-info text-decoration-none fs-6 fw-bold ff-cn">查看更多</a>
+                </div>
+            </div>
+        </li>
+        <li class="col-12 order-first col-md-6 order-md-last product-img3"></li>
+    </ul>
+    <ul class="row list-reset">
+        <!-- product 第4列-->
+        <li class="col-12 order-first col-md-6 order-md-first product-img4"></li>
+        <li class="col-12 col-md-6 product-text d-flex justify-content-center align-items-center ff-en">
+            <div class="row d-flex flex-column align-items-center">
+                <div class="col-12 col-md-8">
+                    <h1 class="fs-4 fw-bold lh-base">1.<br>Levels of Preventive<br>Maintenance Compliance</h1>
+                    <p class="w-100 fs-6 lh-base">The core idea of preventative maintenance is the performance of proactive actions against unscheduled downtime in order to identify potential defects before they evolve into something more severe.</p>
+                    <h1 class="fs-4 fw-bold lh-base">2.<br>Percentage of Planned<br>Maintenance</h1>
+                    <p class="w-100 fs-6 lh-base">The planned maintenance percentage is the total planned maintenance time in your CMMS software over a date range over the total number of hours of a service performed by the technicians.</p>
+                    <h1 class="fs-4 fw-bold lh-base">3.<br>Critical percentage of<br>planned maintenance</h1>
+                    <p class="w-100 fs-6 lh-base">Calculating the critical percentage of planned maintenance will help you prioritize the most important operations that should be performed immediately.</p>
+                    <a href="login.html"><button type="button" class="btn w-100 fs-3 p-2 btn-outline-dark w-100 rounded-pill mt_6">Plan a free online training</button></a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<!-- product-list -->
+<div class="container-fluid pt_4 pb_4 bg-success">
+    <div class="container">
+        <ul class="row d-flex justify-content-between ff-en list-reset">
+            <!-- product-1 -->
+            <li class="col-12 col-md-4">
+                <a href="product_page.html"><div class="product-img product-list-img1  d-flex justify-content-center"><span class="fs-4 text-light fw-bold invisible">Sold Out</span></div></a> 
+                <h1 class="fs-4 fw-bold lh-base">Poppy & Barley</h1>
+                <h2 class="fs-6">Jo Malone<br><br>NT$1,380<span class="fs-6 text-secondary text-decoration-line-through product-old-price">NT$1,580</span></h2>
+            </li>
+            <!-- product-2 -->
+            <li class="col-12 col-md-4">
+                <a href="product_page.html"><div class="product-img product-list-img2  d-flex justify-content-center"><span class="fs-4 text-light fw-bold invisible">Sold Out</span></div></a>
+                <h1 class="fs-4 fw-bold lh-base">Body Wash</h1>
+                <h2 class="fs-6">Curology<br><br>NT11,580</h2>
+            </li>
+            <!-- product-3 -->
+            <li class="col-12 col-md-4">
+                <div class="product-list-img3 bgimg-dark d-flex justify-content-center"><span class="fs-4 text-light fw-bold visible">Sold Out</span></div>
+                <h1 class="fs-4 fw-bold lh-base">Apple Cider Vinegar Capsule</h1>
+                <h2 class="fs-6">Tonik<br><br>NT$1,580</h2>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- product-introduction -->
+<div class="container mt_6 mb_6">
+    <ul class="row ff-en list-reset">
+        <!-- product-introduction img -->
+        <li class="col-12 col-md-8">
+            <div class="product-introduction-img d-flex justify-content-center"></div>
+        </li>
+        <!-- product-introduction textarea -->
+        <li class="col-12 col-md-4 d-flex flex-column justify-content-center">
+            <h1 class="fs-2 fw-bold">Bottle-Recycling</h1>
+            <h2 class="fs-5">Recycle your used empty bottles and be rewarded!</h2>
+            <p class="fs-6">For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling Campaign and planted more than 860 pine trees for a better environment.</p>
+            <a href="product_page.html" class="text-info text-decoration-none fs-6 fw-bold ff-cn">查看更多</a>
+        </li>
+    </ul>
+</div>
+<!-- Subscribe -->
+<div class="container-fluid subscribe-img">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <h1 class="fs-2 fw-bold text-secondary lh-base mb-4 ff-cn">記得<br>訂閱以獲取更多資訊！</h1>
+                <form class="row">
+                    <div class="col-12 col-md-4 d-flex flex-row email-input">
+                        <input type="email" class="border border-primary border-2 w-60 fs-5" placeholder="Your email address">
+                        <a class="w-40" href="#subscribe" data-bs-toggle="modal" data-bs-target="#subscribe"><button type="button" class="btn btn-primary btn-lg ff-en fs-5 w-100 h-100">Subscribe</button></a> 
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<div class="container-fluid bg-primary ff-en">
+    <div class="container">
+        <div class="row">
+            <!-- footer LOGO與文字 -->
+            <div class="col-12 col-md-6 footer-logo">
+                <a href="index.html"><img src="img/d’Perfumewhite.png" alt="footer-LOGO"></a>
+                <span class="fs-6 lh-lg text-light ms-4">© 2020. All Rights Reserved.</span>
+            </div>
+            <!-- footer menu -->
+            <div class="col-md-6 footer-menu">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link footer-menu" href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link footer-menu" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-menu" href="#">Contact</a>
+                      </li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 互動視窗 Modal (subscribe) -->
+<div class="modal fade" id="subscribe" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body d-flex justify-content-center align-items-center">
+                <h1 class="text-primary m-0 fs-5 fw-bold ff-cn lh-base">感謝您的訂閱</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript; choose one of the two! -->
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js' integrity='sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8' crossorigin='anonymous'></script>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js' integrity='sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p' crossorigin='anonymous'></script>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js' integrity='sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ' crossorigin='anonymous'></script>
+-->
+</body>
+</html>

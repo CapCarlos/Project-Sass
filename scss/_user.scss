@@ -1,0 +1,95 @@
+//user.html - scss
+
+//新戶輸入邀請碼文字顏色
+.new-user-color{
+
+    color:#A5A5A5;
+}
+
+//自定義checkbox
+.fs-checkbox{
+
+    font-size: 14px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+//會員中心menu a :hover active
+.user-menu{
+
+    font-size: 1rem;
+    line-height: 2;
+    margin-top: 20px;
+    padding-top: 0.5rem;
+    font-weight: bold;
+
+    li{
+
+        margin-bottom: 1.5rem;
+
+        a{
+            color:#848484;
+
+            &:hover{
+
+                color:$gray-800
+            }
+
+        }
+        &.active{
+
+            
+            a{
+                text-decoration:underline 5px solid #916019;
+
+                &:hover{
+
+                    color:#848484;
+                }
+            }
+        }
+    }
+
+    @include mobile{
+        margin-top: 0;
+    };
+}
+
+//RWD 768PX以下 會員中心H1消失 排列方式改變
+.user-menu-area{
+
+    h1{
+        display: block;
+    }
+
+    @include mobile{
+
+        margin-bottom: 20px;
+
+        ul{
+
+            display: flex;
+            justify-content: space-between;
+        }
+        
+
+        h1{
+            display: none;
+        }
+
+
+    };
+}
+
+//性別選單
+.genderSelect{
+
+    width: 20%;
+
+    @include mobile{
+
+        width: 35%;
+    };
+
+}

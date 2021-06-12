@@ -1,0 +1,170 @@
+//a連結 去除底線
+
+a{
+    text-decoration:none;
+}
+
+//form、input、checkbox 自定義設定
+
+input{
+
+    padding-left: 10px;
+    font-family: "PingFang TC";
+    font-size: 16px;
+    line-height: 38px;
+    border: 1px solid #CED4DA;
+    
+}
+
+.form-select {
+
+    font-family: "PingFang TC";
+    font-size: 16px;
+    border: 1px solid #CED4DA;
+
+}
+
+//img RWD設定
+
+img{
+
+    max-width: 100%;
+    height: auto;
+}
+
+//自定義間距(padding、margin)---------------------------
+//每單位為10px，以_命名
+
+//padding---------------------------
+
+//padding-top #####################
+
+.pt_4{
+
+    padding-top: 40px;
+}
+//padding-right ####################
+
+.pr_1{
+
+    padding-right: 10px;
+}
+
+.pr_2{
+    padding-right: 20px;
+}
+
+//padding-bottom ####################
+
+.pb_4{
+
+    padding-bottom: 40px;
+}
+
+//padding-left ######################
+
+.pl_1{
+
+    padding-left: 10px;
+}
+
+.pl_2{
+    padding-left: 20px;
+}
+
+//margin---------------------------
+//margin-top ####################
+
+.mt_2{
+
+    margin-top: 20px;
+}
+
+.mt_6{
+
+    margin-top: 60px;
+}
+
+.mt_8{
+
+    margin-top: 80px;
+}
+
+//margin-right #####################
+
+.mr-1{
+
+    margin-right: 10px;
+}
+
+//margin-bottom ####################
+
+.mb_2{
+
+    margin-bottom: 20px;
+}
+
+.mb_3 {
+    margin-bottom: 30px;
+}
+
+.mb_4 {
+    margin-bottom: 40px;
+}
+
+.mb_6 {
+    margin-bottom: 60px;
+}
+
+.mb_8 {
+    margin-bottom: 80px;
+}
+
+//*****用px定義的*****
+.mb-36px{
+
+    margin-bottom: 36px;
+}
+//*******************
+
+//margin-left #####################
+
+.ml-1{
+
+    margin-left: 10px;
+}
+
+//寬度自定義(width)---------------------------
+//以%為單位
+
+.w-20{
+
+    width: 20%;
+
+}
+
+.w-40{
+
+    width: 40%;
+    
+}
+
+.w-48{
+
+    width: 48%;
+}
+
+.w-60{
+
+    width: 60%;
+
+}
+
+//文字大小自定義(font-size)---------------------------
+//以px為單位
+
+.fs-14px{
+
+    font-size: 14px;
+
+}

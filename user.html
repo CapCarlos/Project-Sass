@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<!-- Required meta tags -->
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<title>SCSS 版型管理任務(會員中心user)</title>
+</head>
+<body>
+<!-- nav menu -->
+<div class="container mt-1 mb-1">
+    <div class="row">
+        <!-- top-LOGO area -->
+        <div class="col-12 col-md-2 nav-logo">
+            <!-- LOGO -->
+            <a href="index.html"><img src="img/d’Perfume.png" alt="index-LOGO"></a> 
+            <div class="d-flex justify-content-center ">
+                <!-- mobile-cart -->
+                <a href="#" class="mobile-cart">
+                    <i class="fas fa-shopping-cart fs-3">
+                        <span class="badge rounded-pill bg-primary p-1">3</span>
+                    </i>
+                </a>
+                <!-- mobile-menu -->
+                <a href="#mobileMenu" class="mobile-menu" data-bs-toggle="collapse" >
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>   
+        </div>
+        <!-- top-menu -->
+        <div class="col-md-10 nav-menu">
+            <ul class="nav justify-content-end">
+                <li class="nav-item fs-5">
+                  <a class="nav-link nav-color" aria-current="page" href="product.html"><i class="fas fa-store-alt m-1"></i>Product</a>
+                </li>
+                <li class="nav-item fs-5">
+                  <a class="nav-link nav-color" href="login.html"><i class="fas fa-user m-1"></i>log in</a>
+                </li>
+                <li class="nav-item fs-5">
+                  <a class="nav-link nav-color" href="#"><i class="fas fa-heart m-1"></i>Wishlist</a>
+                </li>
+                <li class="nav-item fs-5">
+                    <a class="nav-link nav-color" href="#"><i class="fas fa-shopping-cart m-1"></i>Cart(3)</a>
+                </li>
+              </ul>
+        </div>
+    </div>
+</div>
+<!-- product menu -->
+<div class="product-menu-bar container-fluid ff-en bg-primary mb_8">
+    <div class="container text-start">
+        <ul class="product-menu list-reset d-flex">
+            <li><a href="#">CHANEL</a></li>
+            <li><a href="#">Jo Malone</a></li>
+            <li><a href="#">Curology</a></li>
+            <li><a href="#">Dior</a></li>
+            <li><a href="#">Chloe</a></li>
+            <li><a href="#">ZARA</a></li>
+        </ul>
+    </div>
+</div>
+<!-- user page -->
+<div class="container-fluid mobileMenu-cover">
+    <div class="container">
+        <div class="row">
+            <!-- left area -->
+            <div class="col-12 order-1 col-md-2 order-md-1 user-menu-area">
+                <h1 class="fs-5 text-warning fw-bold">會員中心</h1>
+                <ul class="user-menu list-reset ff-cn">
+                    <li class="active"><a href="#">會員資料修改</a></li>
+                    <li><a href="#">訂單查詢</a></li>
+                    <li><a href="#">退／換貨申請</a></li>
+                </ul>
+            </div>
+            <!-- main -->
+            <div class="col-12 order-3 col-md-7 order-md-2">
+                <h1 class="border-bottom border-danger border-3 fs-6 fw-bold text-dark lh-lg mb-3">個人資料修改</h1>
+                <!-- 個人資料修改 -->
+                <ul class="row list-reset text-danger lh-base ff-cn fs-6">
+                    <!-- 會員帳號 -->
+                    <li class="col-4 col-md-2 mb-36px d-flex align-items-center">會員帳號</li>
+                    <li class="col-8 col-md-7 mb-36px d-flex align-items-center">email@example.com</li>
+                    <li class="w-100"></li>
+                    <!-- 會員姓名 -->
+                    <li class="col-4 col-md-2 mb-36px d-flex align-items-center">會員姓名</li>
+                    <li class="col-8 col-md-7 mb-36px d-flex align-items-center">
+                        <input type="text" class="rounded w-100" placeholder="Username">
+                    </li>
+                    <li class="w-100"></li>
+                    <!-- 會員性別 -->
+                    <li class="col-4 col-md-2 mb-36px d-flex align-items-center">會員性別</li>
+                    <li class="col-8 col-md-7 mb-36px d-flex align-items-center">
+                        <select class="form-select genderSelect">
+                            <option selected>女</option>
+                            <option>男</option>
+                        </select>
+                    </li>
+                    <li class="w-100"></li>
+                    <!-- 電子信箱 -->
+                    <li class="col-4 col-md-2 mb-36px d-flex align-items-center">電子信箱</li>
+                    <li class="col-8 col-md-7 mb-36px d-flex align-items-center">
+                        <input type="email" class="rounded w-100" placeholder="email@example.com">
+                    </li>
+                    <li class="w-100"></li>
+                    <!-- 手機號碼 -->
+                    <li class="col-4 col-md-2 mb-36px d-flex align-items-center">手機號碼</li>
+                    <li class="col-8 col-md-7 mb-36px d-flex align-items-center">
+                        <input type="text" class="rounded w-100"  placeholder="09xx-xxxxxx">
+                    </li>
+                    <li class="w-100"></li>
+                    <!-- 聯絡地址 -->
+                    <li class="col-4 col-md-2 mb-3 d-flex align-items-center">聯絡地址</li>
+                    <li class="col-8 col-md-7 mb-3 d-flex align-items-center">
+                        <select class="form-select w-50">
+                            <option selected>台灣及離島地區</option>
+                            <option>香港</option>
+                            <option>澳門</option>
+                            <option>中國大陸</option>
+                            <option>日本</option>
+                        </select>
+                    </li>
+                    <li class="w-100"></li>
+                    <li class="col-4 col-md-2 mb-3"></li>
+                    <li class="col-8 col-md-7 mb-3 d-flex align-items-center">
+                        <ul class="list-reset d-flex w-100">
+                            <li class="w-50 mr-1">
+                                <select class="form-select">
+                                    <option selected>高雄市</option>
+                                    <option>臺北市</option>
+                                    <option>新北市</option>
+                                    <option>桃園市</option>
+                                    <option>臺中市</option>
+                                    <option>臺南市</option>
+                                </select>
+                            </li>
+                            <li class="w-48">
+                                <select class="form-select">
+                                    <option selected>鹽埕區</option>
+                                    <option>鼓山區</option>
+                                    <option>左營區</option>
+                                    <option>楠梓區</option>
+                                    <option>三民區</option>
+                                    <option>新興區</option>
+                                    <option>前金區</option>
+                                    <option>苓雅區</option>
+                                    <option>前鎮區</option>
+                                    <option>旗津區</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-100"></li>
+                    <li class="col-4 col-md-2 mb-3"></li>
+                    <li class="col-8 col-md-7 mb-3 d-flex align-items-center">
+                        <input type="text" class="rounded w-100"  placeholder="請輸入地址">
+                    </li>
+                    <li class="w-100"></li>
+                    <!-- 我願意收到最新優惠情報 checkbox -->
+                    <li class="col-4 col-md-2 mb-36px"></li>
+                    <li class="col-8 col-md-7 mb-36px d-flex align-items-center">
+                        <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                            <label class="btn btn-outline-primary p-0 fs-checkbox" for="btn-check-outlined">✔</label>
+                        <span class="ml-1">我願意收到最新優惠情報</span>
+                    </li>
+                    <li class="w-100"></li>
+                    <!-- 配送地址 -->
+                    <li class="col-4 col-md-2 mb-3 d-flex align-items-center">配送地址</li>
+                    <li class="col-8 col-md-7 mb-3 d-flex align-items-center">
+                        <select class="form-select w-50">
+                            <option selected>台灣及離島地區</option>
+                            <option>香港</option>
+                            <option>澳門</option>
+                            <option>中國大陸</option>
+                            <option>日本</option>
+                        </select>
+                    </li>
+                    <li class="w-100"></li>
+                    <li class="col-4 col-md-2 mb-3"></li>
+                    <li class="col-8 col-md-7 mb-3 d-flex align-items-center">
+                        <ul class="list-reset d-flex w-100">
+                            <li class="w-50 mr-1">
+                                <select class="form-select">
+                                    <option selected>高雄市</option>
+                                    <option>臺北市</option>
+                                    <option>新北市</option>
+                                    <option>桃園市</option>
+                                    <option>臺中市</option>
+                                    <option>臺南市</option>
+                                </select>
+                            </li>
+                            <li class="w-48">
+                                <select class="form-select">
+                                    <option selected>鹽埕區</option>
+                                    <option>鼓山區</option>
+                                    <option>左營區</option>
+                                    <option>楠梓區</option>
+                                    <option>三民區</option>
+                                    <option>新興區</option>
+                                    <option>前金區</option>
+                                    <option>苓雅區</option>
+                                    <option>前鎮區</option>
+                                    <option>旗津區</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="w-100"></li>
+                    <li class="col-4 col-md-2 mb-3"></li>
+                    <li class="col-8 col-md-7 mb-3 d-flex align-items-center">
+                        <input type="text" class="rounded w-100"  placeholder="請輸入地址">
+                    </li>
+                    <li class="w-100"></li>
+                    <!-- 確定修改 btn -->
+                    <li class="col-4 col-md-2 mb-5"></li>
+                    <li class="col-8 col-md-7 mb-5">
+                        <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal" data-bs-target="#edit">確定修改</button>
+                    </li>
+                </ul>
+                <!-- 修改密碼 -->
+                <h1 class="border-bottom border-danger border-3 fs-6 fw-bold text-dark lh-lg mb-3">修改密碼</h1>
+                <ul class="row list-reset text-danger lh-base ff-cn fs-6">
+                    <!-- 舊密碼 -->
+                    <li li class="col-4 col-md-2 mb-4 d-flex align-items-center">舊密碼</li>
+                    <li li class="col-8 col-md-7 mb-4 d-flex align-items-center">
+                        <input type="password" class="rounded w-100">
+                    </li>
+                    <li class="w-100"></li>
+                    <!-- 新密碼 -->
+                    <li li class="col-4 col-md-2 mb-4 d-flex align-items-center">新密碼</li>
+                    <li li class="col-8 col-md-7 mb-4 d-flex align-items-center">
+                        <input type="password" class="rounded w-100">
+                    </li>
+                    <li class="w-100"></li>
+                    <!-- 確認密碼 -->
+                    <li li class="col-4 col-md-2 mb-4 d-flex align-items-center">確認密碼</li>
+                    <li li class="col-8 col-md-7 mb-4 d-flex align-items-center">
+                        <input type="password" class="rounded w-100">
+                    </li>
+                    <li class="w-100"></li>
+                    <!-- 變更密碼btn -->
+                    <li class="col-4 col-md-2 mb-5"></li>
+                    <li class="col-8 col-md-7 mb-5">
+                        <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal" data-bs-target="#password">變更密碼</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- right area -->
+            <div class="col-12 order-2 col-md-3 order-md-3 mb_4">
+                <!-- member-number -->
+                <ul class="row list-reset mb-4">
+                    <li class="col-4 col-md-4 d-flex align-items-center">
+                        <i class="fas fa-user m-1"></i>
+                        <span class="fs-6 ff-cn text-danger">會員編碼</span>
+                    </li>
+                    <li class="col-8 col-md-8 d-flex align-items-center">
+                        <span class="fs-5 ff-en text-secondary fw-bold">T00020080615</span>
+                    </li>
+                </ul>
+                <!-- member-message -->
+                <ul class="row list-reset">
+                    <li class="col-4 col-md-4">
+                        <span class="fs-6 ff-cn text-danger">購物車</span>
+                    </li>
+                    <li class="col-8 col-md-8">
+                        <span class="fs-6 ff-en text-danger">56</span>
+                    </li>
+                    <li class="col-4 col-md-4 mt-3">
+                        <span class="fs-6 ff-cn text-danger">我的收藏</span>
+                    </li>
+                    <li class="col-8 col-md-8 mt-3">
+                        <span class="fs-6 ff-en text-danger">23</span>
+                    </li>
+                    <li class="col-4 col-md-4 mt-3">
+                        <span class="fs-6 ff-cn text-danger">完成訂單</span>
+                    </li>
+                    <li class="col-8 col-md-8 mt-3">
+                        <span class="fs-6 ff-en text-danger">8</span>
+                    </li>
+                    <li class="col-4 col-md-4 mt-3">
+                        <span class="fs-6 ff-cn text-danger">會員紅利</span>
+                    </li>
+                    <li class="col-8 col-md-8 mt-3">
+                        <span class="fs-6 ff-en text-danger">2680</span>
+                    </li>
+                    <li class="col-4 col-md-4 mt-3">
+                        <span class="fs-6 ff-cn text-danger">邀請碼</span>
+                    </li>
+                    <li class="col-8 col-md-8 mt-3">
+                        <span class="fs-6 ff-en text-danger">TK2075</span>
+                    </li>
+                </ul>
+                <h2 class="new-user-color fs-14px">新戶輸入邀請碼即可獲贈紅利點數1000點</h2>
+            </div>
+        </div>
+        <!-- top-menu (mobile) --> 
+        <div class="col-12 collapse mobileMenu-set" id="mobileMenu">
+            <div class="card card-body p-0">
+                <ul class="list-reset mobile-menu-list">
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="li-last"><a href="login.html">login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<div class="container-fluid bg-primary ff-en">
+    <div class="container">
+        <div class="row">
+            <!-- footer LOGO與文字 -->
+            <div class="col-12 col-md-6 footer-logo">
+                <a href="index.html"><img src="img/d’Perfumewhite.png" alt="footer-LOGO"></a>
+                <span class="fs-6 lh-lg text-light ms-4">© 2020. All Rights Reserved.</span>
+            </div>
+            <!-- footer menu -->
+            <div class="col-12 col-md-6 footer-menu">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link footer-menu" href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link footer-menu" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-menu" href="#">Contact</a>
+                      </li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 互動視窗 Modal (edit) -->
+<div class="modal fade" id="edit" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body d-flex justify-content-center align-items-center">
+                <h1 class="text-primary m-0 fs-5 fw-bold ff-cn lh-base">個人資料修改成功</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 互動視窗 Modal (password) -->
+<div class="modal fade" id="password" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body d-flex justify-content-center align-items-center">
+                <h1 class="text-primary m-0 fs-5 fw-bold ff-cn lh-base">密碼變更成功</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript; choose one of the two! -->
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js' integrity='sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8' crossorigin='anonymous'></script>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js' integrity='sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p' crossorigin='anonymous'></script>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js' integrity='sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ' crossorigin='anonymous'></script>
+-->
+</body>
+</html>

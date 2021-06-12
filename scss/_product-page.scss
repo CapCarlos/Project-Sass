@@ -1,0 +1,98 @@
+//product-page.html - scss
+
+.product-page-img1{
+
+    @include padding-set(26%,26%);
+    @include background-cover("../img/product1.jpg",center,center);
+    
+    @include mobile{
+
+        padding-top: 32%;
+        padding-bottom: 32%;
+        
+    };
+}
+
+.product-page-img2{
+
+    @include padding-set(77%,77%);
+    @include background-cover("../img/product2.jpg",center,center);
+    
+    @include mobile{
+
+        padding-top: 93%;
+        padding-bottom: 93%;
+        
+    };
+}
+
+.product-page-img3{
+
+    @include padding-set(77%,77%);
+    @include background-cover("../img/product3.jpg",center,center);
+    
+    @include mobile{
+
+        padding-top: 93%;
+        padding-bottom: 93%;
+        
+    };
+
+}
+
+.product-page-img4{
+
+    @include padding-set(26%,26%);
+    @include background-cover("../img/product1.jpg",center,center);
+    
+    @include mobile{
+
+        padding-top: 61%;
+        padding-bottom: 61%;
+        
+    };
+}
+
+//數量調整按鈕格式
+.product-page-btn{
+
+    border-right: 0px;
+    border-top: 2px solid #916000;
+    border-left: 2px solid #916000;
+    border-bottom: 2px solid #916000;
+}
+
+//RWD  讓img1與文字並排且下方不留白 & padding設定
+.product-introduction-text{
+
+    margin-bottom: -100%;
+
+    .notice{
+
+        margin-top: 80px;
+    }
+
+    @include mobile{
+
+        margin-bottom: 40px;
+
+        .notice{
+
+            margin-top: 40px;
+        }
+
+    };
+
+}
+
+//因應product-introduction-text 讓footer下方不留白
+.product-page-footer{
+
+    margin-top: 11.2%;
+
+    @include mobile{
+
+        margin-top: 0;
+    };
+
+}

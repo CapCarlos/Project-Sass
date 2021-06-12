@@ -1,0 +1,14 @@
+//login.html - scss
+
+.login-img{
+
+    @include padding-set(50%,50%);
+    @include background-cover("../img/login1.jpg",center,center);
+    
+    @include mobile{
+
+        padding-top: 32%;
+        padding-bottom: 32%;
+    };
+}
+

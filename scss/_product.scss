@@ -1,0 +1,145 @@
+//product.html - scss
+
+.product-card-img1{
+
+    @include padding-set(50%,50%);
+    @include background-cover("../img/products1.jpg",center,60%);
+    
+}
+.product-card-img2{
+
+    @include padding-set(50%,50%);
+    @include background-cover("../img/index6.jpg",center,bottom);
+
+}
+.product-card-img3{
+
+    @include padding-set(50%,50%);
+    @include background-cover("../img/products3.jpg",center,35%);
+
+}
+.product-card-img4{
+
+    @include padding-set(50%,50%);
+    @include background-cover("../img/products4.jpg",center,25%);
+
+}
+
+.product-card-img5{
+
+    @include padding-set(50%,50%);
+    @include background-cover("../img/products5.jpg",center,40%);
+
+}
+.product-card-img6{
+
+    @include padding-set(50%,50%);
+    @include background-cover("../img/index4.jpg",left,60%);
+
+}
+.product-card-img7{
+
+    @include padding-set(50%,50%);
+    @include background-cover("../img/products7.jpg",center,35%);
+
+}
+.product-card-img8{
+
+    @include padding-set(50%,50%);
+    @include background-cover("../img/products8.jpg",center,25%);
+
+}
+
+.product-card-img9{
+
+    @include padding-set(50%,50%);
+    @include background-cover("../img/index3.png",center,60%);
+
+}
+.product-card-img10{
+
+    @include padding-set(50%,50%);
+    @include background-cover("../img/products10.jpg",center,43%);
+
+}
+.product-card-img11{
+
+    @include padding-set(50%,50%);
+    @include background-cover("../img/products11.jpg",center,65%);
+
+}
+.product-card-img12{
+
+    @include padding-set(50%,50%);
+    @include background-cover("../img/products12.jpg",center,25%);
+
+}
+//RWD product-menu-bar 在768PX以下消失
+.product-menu-bar{
+
+    display: block;
+
+        @include mobile{
+            display: none;
+        };
+}
+// product-menu a :hover
+.product-menu{
+
+    li{
+        font-size: 1.25rem;
+        color:$light;
+
+        a{
+
+            display: block;
+            padding: 1rem;
+            text-decoration:none;
+            color:$light;
+
+            &:hover{
+
+                color:$gray-400;
+
+            }
+        }
+    }
+}
+
+//頁碼a :hover active
+.page{
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    a{
+        text-decoration:none;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &:hover{
+
+            font-weight: bold;
+
+        }
+    
+    }
+
+    &.active{
+
+        a{
+            text-decoration:none;
+            font-weight: bold;
+            border-bottom: 5px solid #AC8A46;
+        }
+    }
+}
+
+
+.mobileMenu-cover{
+
+    @include cover-menu-down;
+    @include mobile{
+        padding-top: 40px;
+    };
+}
