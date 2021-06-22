@@ -12280,6 +12280,14 @@ img {
   }
 }
 
+.morebtn {
+  color: #AC8A46;
+}
+
+.morebtn:hover {
+  color: black;
+}
+
 .product-old-price {
   margin-left: 8px;
 }
@@ -12589,6 +12597,22 @@ img {
   }
 }
 
+.i-heart {
+  color: #916019;
+}
+
+.i-heart:hover {
+  color: black;
+}
+
+.i-cart {
+  color: #916019;
+}
+
+.i-cart:hover {
+  color: black;
+}
+
 .product-page-img1 {
   padding-top: 26%;
   padding-bottom: 26%;
@@ -12693,6 +12717,14 @@ img {
     padding-top: 32%;
     padding-bottom: 32%;
   }
+}
+
+.forget-btn {
+  color: #916019;
+}
+
+.forget-btn:hover {
+  color: black;
 }
 
 .new-user-color {

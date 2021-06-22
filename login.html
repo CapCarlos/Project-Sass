@@ -16,7 +16,7 @@
         <!-- top-LOGO area -->
         <div class="col-12 col-md-2 nav-logo">
             <!-- LOGO -->
-            <a href="index.html"><img src="img/d’Perfume.png" alt="index-LOGO"></a> 
+            <h1><a href="index.html"><img src="img/d’Perfume.png" alt="index-LOGO"></a></h1> 
             <div class="d-flex justify-content-center ">
                 <!-- mobile-cart -->
                 <a href="#" class="mobile-cart">
@@ -73,29 +73,33 @@
             <!-- login textarea-->
             <div class="col-12 col-md-4 d-flex flex-column justify-content-center">
                 <!-- login 標題 -->
-                <h1 class="fs-1 fw-bold ff-en lh-lg">Log in</h1>
+                <h2 class="fs-1 fw-bold ff-en lh-lg">Log in</h2>
                 <!-- login 帳號 -->
                 <div class="email mb_2">
-                    <label class="ff-cn">帳號</label>
-                    <input type="email" class="w-100 rounded" placeholder="email@example.com">
+                    <label for="account" class="ff-cn">帳號</label>
+                    <input type="email" id="account" class="w-100 rounded" placeholder="email@example.com">
                 </div>
                 <!-- login 密碼 -->
                 <div class="password">
-                    <label class="ff-cn">密碼</label>
-                    <input type="password" class="w-100 rounded" placeholder="Password">
+                    <label for="password" class="ff-cn" >密碼</label>
+                    <input type="password" id="password" class="w-100 rounded" placeholder="Password">
                 </div>
                 <!-- login 下方按鈕區域 -->
-                <ul class="btn-area list-reset d-flex justify-content-between mt-5">
+                <div class="btn-area d-flex justify-content-between mt-5">
                     <!-- 忘記密碼 -->
-                    <li class="d-flex flex-column justify-content-center">
-                        <a class="text-decoration-none" href="#forget"><span class="text-primary fs-6 fw-bold ff-cn" data-bs-toggle="modal" data-bs-target="#forget">忘記密碼</span></a>
-                    </li>
+                    <div class="d-flex flex-column justify-content-center">
+                        <a class="text-decoration-none forget-btn" href="#forget"><span class="fs-6 fw-bold ff-cn" data-bs-toggle="modal" data-bs-target="#forget">忘記密碼</span></a>
+                    </div>
                     <!-- 註冊與登入btn --> 
-                    <li>
-                        <button type="button" class="btn btn-outline-primary ff-cn" data-bs-toggle="modal" data-bs-target="#join">註冊</button>
-                        <button type="button" class="btn btn-primary ff-cn" data-bs-toggle="modal" data-bs-target="#login">登入</button>
-                    </li>
-                </ul>
+                    <ul class="list-reset d-flex">
+                        <li class="me-2">
+                            <button type="button" class="btn btn-outline-primary ff-cn" data-bs-toggle="modal" data-bs-target="#join">註冊</button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-primary ff-cn" data-bs-toggle="modal" data-bs-target="#login">登入</button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- top-menu (mobile) --> 
@@ -122,16 +126,16 @@
                 <span class="fs-6 lh-lg text-light ms-4">© 2020. All Rights Reserved.</span>
             </div>
             <!-- footer menu -->
-            <div class="col-12 col-md-6 footer-menu">
+            <div class="col-md-6 footer-menu">
                 <ul class="nav justify-content-end">
                     <li class="nav-item">
                       <a class="nav-link footer-menu" href="product.html">Product</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link footer-menu" href="#">Blog</a>
+                      <a class="nav-link footer-menu" href="user.html">Account</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link footer-menu" href="#">Contact</a>
+                        <a class="nav-link footer-menu" href="user.html">Contact</a>
                       </li>
                   </ul>
             </div>
@@ -143,7 +147,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-body d-flex justify-content-center align-items-center">
-                <h1 class="text-primary m-0 fs-5 fw-bold ff-cn lh-base">登入成功</h1>
+                <h2 class="text-primary m-0 fs-5 fw-bold ff-cn lh-base">登入成功</h2>
             </div>
         </div>
     </div>
@@ -153,7 +157,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-body d-flex justify-content-center align-items-center">
-                <h1 class="text-primary m-0 fs-5 fw-bold ff-cn lh-base">已發送註冊連結至您的信箱</h1>
+                <h2 class="text-primary m-0 fs-5 fw-bold ff-cn lh-base">已發送註冊連結至您的信箱</h2>
             </div>
         </div>
     </div>
@@ -163,7 +167,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-body d-flex justify-content-center align-items-center">
-                <h1 class="text-primary m-0 fs-5 fw-bold ff-cn lh-base">已發送新密碼至您的信箱</h1>
+                <h2 class="text-primary m-0 fs-5 fw-bold ff-cn lh-base">已發送新密碼至您的信箱</h2>
             </div>
         </div>
     </div>
