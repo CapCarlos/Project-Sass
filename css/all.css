@@ -12795,3 +12795,7 @@ img {
     width: 35%;
   }
 }
+
+.member-message tr, .member-message td {
+  padding-top: 16px;
+}

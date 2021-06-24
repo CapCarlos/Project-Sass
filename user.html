@@ -79,41 +79,41 @@
             <div class="col-12 order-3 col-md-7 order-md-2">
                 <h2 class="border-bottom border-danger border-3 fs-6 fw-bold text-dark lh-lg mb-3">個人資料修改</h2>
                 <!-- 個人資料修改 -->
-                <ul class="row list-reset text-danger lh-base ff-cn fs-6">
+                <form class="row text-danger lh-base ff-cn fs-6">
                     <!-- 會員帳號 -->
-                    <li class="col-4 col-md-2 mb-36px d-flex align-items-center">會員帳號</li>
-                    <li class="col-8 col-md-7 mb-36px d-flex align-items-center">email@example.com</li>
-                    <li class="w-100"></li>
+                    <label class="col-4 col-md-2 mb-36px d-flex align-items-center">會員帳號</label>
+                    <div class="col-8 col-md-7 mb-36px d-flex align-items-center">email@example.com</div>
+                    <div class="w-100"></div>
                     <!-- 會員姓名 -->
-                    <li class="col-4 col-md-2 mb-36px d-flex align-items-center">會員姓名</li>
-                    <li class="col-8 col-md-7 mb-36px d-flex align-items-center">
-                        <input type="text" class="rounded w-100" placeholder="Username">
-                    </li>
-                    <li class="w-100"></li>
+                    <label class="col-4 col-md-2 mb-36px d-flex align-items-center" for="name">會員姓名</label>
+                    <div class="col-8 col-md-7 mb-36px d-flex align-items-center">
+                        <input type="text" class="rounded w-100" placeholder="Username" id="name">
+                    </div>
+                    <div class="w-100"></div>
                     <!-- 會員性別 -->
-                    <li class="col-4 col-md-2 mb-36px d-flex align-items-center">會員性別</li>
-                    <li class="col-8 col-md-7 mb-36px d-flex align-items-center">
-                        <select class="form-select genderSelect">
+                    <label class="col-4 col-md-2 mb-36px d-flex align-items-center" for="gender">會員性別</label>
+                    <div class="col-8 col-md-7 mb-36px d-flex align-items-center">
+                        <select class="form-select genderSelect" id="gender">
                             <option selected>女</option>
                             <option>男</option>
                         </select>
-                    </li>
-                    <li class="w-100"></li>
+                    </div>
+                    <div class="w-100"></div>
                     <!-- 電子信箱 -->
-                    <li class="col-4 col-md-2 mb-36px d-flex align-items-center">電子信箱</li>
-                    <li class="col-8 col-md-7 mb-36px d-flex align-items-center">
-                        <input type="email" class="rounded w-100" placeholder="email@example.com">
-                    </li>
-                    <li class="w-100"></li>
+                    <label class="col-4 col-md-2 mb-36px d-flex align-items-center" for="email">電子信箱</label>
+                    <div class="col-8 col-md-7 mb-36px d-flex align-items-center">
+                        <input type="email" class="rounded w-100" placeholder="email@example.com" id="email">
+                    </div>
+                    <div class="w-100"></div>
                     <!-- 手機號碼 -->
-                    <li class="col-4 col-md-2 mb-36px d-flex align-items-center">手機號碼</li>
-                    <li class="col-8 col-md-7 mb-36px d-flex align-items-center">
-                        <input type="text" class="rounded w-100"  placeholder="09xx-xxxxxx">
-                    </li>
-                    <li class="w-100"></li>
+                    <label class="col-4 col-md-2 mb-36px d-flex align-items-center" for="tel">手機號碼</label>
+                    <div class="col-8 col-md-7 mb-36px d-flex align-items-center">
+                        <input type="tel" class="rounded w-100"  placeholder="09xx-xxxxxx" id="tel">
+                    </div>
+                    <div class="w-100"></div>
                     <!-- 聯絡地址 -->
-                    <li class="col-4 col-md-2 mb-3 d-flex align-items-center">聯絡地址</li>
-                    <li class="col-8 col-md-7 mb-3 d-flex align-items-center">
+                    <label class="col-4 col-md-2 mb-3 d-flex align-items-center" for="address">聯絡地址</label>
+                    <div class="col-8 col-md-7 mb-3 d-flex align-items-center">
                         <select class="form-select w-50">
                             <option selected>台灣及離島地區</option>
                             <option>香港</option>
@@ -121,10 +121,10 @@
                             <option>中國大陸</option>
                             <option>日本</option>
                         </select>
-                    </li>
-                    <li class="w-100"></li>
-                    <li class="col-4 col-md-2 mb-3"></li>
-                    <li class="col-8 col-md-7 mb-3 d-flex align-items-center">
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-4 col-md-2 mb-3"></div>
+                    <div class="col-8 col-md-7 mb-3 d-flex align-items-center">
                         <ul class="list-reset d-flex w-100">
                             <li class="w-50 mr-1">
                                 <select class="form-select">
@@ -151,24 +151,24 @@
                                 </select>
                             </li>
                         </ul>
-                    </li>
-                    <li class="w-100"></li>
-                    <li class="col-4 col-md-2 mb-3"></li>
-                    <li class="col-8 col-md-7 mb-3 d-flex align-items-center">
-                        <input type="text" class="rounded w-100"  placeholder="請輸入地址">
-                    </li>
-                    <li class="w-100"></li>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-4 col-md-2 mb-3"></div>
+                    <div class="col-8 col-md-7 mb-3 d-flex align-items-center">
+                        <input type="text" class="rounded w-100"  placeholder="請輸入地址" id="address">
+                    </div>
+                    <div class="w-100"></div>
                     <!-- 我願意收到最新優惠情報 checkbox -->
-                    <li class="col-4 col-md-2 mb-36px"></li>
-                    <li class="col-8 col-md-7 mb-36px d-flex align-items-center">
+                    <div class="col-4 col-md-2 mb-36px"></div>
+                    <div class="col-8 col-md-7 mb-36px d-flex align-items-center">
                         <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
                             <label class="btn btn-outline-primary p-0 fs-checkbox" for="btn-check-outlined">✔</label>
                         <span class="ml-1">我願意收到最新優惠情報</span>
-                    </li>
-                    <li class="w-100"></li>
+                    </div>
+                    <div class="w-100"></div>
                     <!-- 配送地址 -->
-                    <li class="col-4 col-md-2 mb-3 d-flex align-items-center">配送地址</li>
-                    <li class="col-8 col-md-7 mb-3 d-flex align-items-center">
+                    <label class="col-4 col-md-2 mb-3 d-flex align-items-center" for="delivery">配送地址</label>
+                    <div class="col-8 col-md-7 mb-3 d-flex align-items-center">
                         <select class="form-select w-50">
                             <option selected>台灣及離島地區</option>
                             <option>香港</option>
@@ -176,10 +176,10 @@
                             <option>中國大陸</option>
                             <option>日本</option>
                         </select>
-                    </li>
-                    <li class="w-100"></li>
-                    <li class="col-4 col-md-2 mb-3"></li>
-                    <li class="col-8 col-md-7 mb-3 d-flex align-items-center">
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-4 col-md-2 mb-3"></div>
+                    <div class="col-8 col-md-7 mb-3 d-flex align-items-center">
                         <ul class="list-reset d-flex w-100">
                             <li class="w-50 mr-1">
                                 <select class="form-select">
@@ -206,46 +206,46 @@
                                 </select>
                             </li>
                         </ul>
-                    </li>
-                    <li class="w-100"></li>
-                    <li class="col-4 col-md-2 mb-3"></li>
-                    <li class="col-8 col-md-7 mb-3 d-flex align-items-center">
-                        <input type="text" class="rounded w-100"  placeholder="請輸入地址">
-                    </li>
-                    <li class="w-100"></li>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-4 col-md-2 mb-3"></div>
+                    <div class="col-8 col-md-7 mb-3 d-flex align-items-center">
+                        <input type="text" class="rounded w-100"  placeholder="請輸入地址" id="delivery">
+                    </div>
+                    <div class="w-100"></div>
                     <!-- 確定修改 btn -->
-                    <li class="col-4 col-md-2 mb-5"></li>
-                    <li class="col-8 col-md-7 mb-5">
+                    <div class="col-4 col-md-2 mb-5"></div>
+                    <div class="col-8 col-md-7 mb-5">
                         <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal" data-bs-target="#edit">確定修改</button>
-                    </li>
-                </ul>
+                    </div>
+                </form>
                 <!-- 修改密碼 -->
                 <h2 class="border-bottom border-danger border-3 fs-6 fw-bold text-dark lh-lg mb-3">修改密碼</h2>
-                <ul class="row list-reset text-danger lh-base ff-cn fs-6">
+                <form class="row list-reset text-danger lh-base ff-cn fs-6">
                     <!-- 舊密碼 -->
-                    <li li class="col-4 col-md-2 mb-4 d-flex align-items-center">舊密碼</li>
-                    <li li class="col-8 col-md-7 mb-4 d-flex align-items-center">
-                        <input type="password" class="rounded w-100">
-                    </li>
-                    <li class="w-100"></li>
+                    <label li class="col-4 col-md-2 mb-4 d-flex align-items-center" for="oldPassword">舊密碼</label>
+                    <div li class="col-8 col-md-7 mb-4 d-flex align-items-center">
+                        <input type="password" class="rounded w-100" id="oldPassword">
+                    </div>
+                    <div class="w-100"></div>
                     <!-- 新密碼 -->
-                    <li li class="col-4 col-md-2 mb-4 d-flex align-items-center">新密碼</li>
-                    <li li class="col-8 col-md-7 mb-4 d-flex align-items-center">
-                        <input type="password" class="rounded w-100">
-                    </li>
-                    <li class="w-100"></li>
+                    <label li class="col-4 col-md-2 mb-4 d-flex align-items-center" for="newPassword">新密碼</label>
+                    <div li class="col-8 col-md-7 mb-4 d-flex align-items-center">
+                        <input type="password" class="rounded w-100" id="newPassword">
+                    </div>
+                    <div class="w-100"></div>
                     <!-- 確認密碼 -->
-                    <li li class="col-4 col-md-2 mb-4 d-flex align-items-center">確認密碼</li>
-                    <li li class="col-8 col-md-7 mb-4 d-flex align-items-center">
-                        <input type="password" class="rounded w-100">
-                    </li>
-                    <li class="w-100"></li>
+                    <label li class="col-4 col-md-2 mb-4 d-flex align-items-center" for="checkPassword">確認密碼</label>
+                    <div li class="col-8 col-md-7 mb-4 d-flex align-items-center">
+                        <input type="password" class="rounded w-100" id="checkPassword">
+                    </div>
+                    <div class="w-100"></div>
                     <!-- 變更密碼btn -->
-                    <li class="col-4 col-md-2 mb-5"></li>
-                    <li class="col-8 col-md-7 mb-5">
+                    <div class="col-4 col-md-2 mb-5"></div>
+                    <div class="col-8 col-md-7 mb-5">
                         <button type="button" class="btn btn-primary w-50" data-bs-toggle="modal" data-bs-target="#password">變更密碼</button>
-                    </li>
-                </ul>
+                    </div>
+                </form>
             </div>
             <!-- right area -->
             <div class="col-12 order-2 col-md-3 order-md-3 mb_4">
@@ -260,39 +260,32 @@
                     </li>
                 </ul>
                 <!-- member-message -->
-                <ul class="row list-reset">
-                    <li class="col-4 col-md-4">
-                        <span class="fs-6 ff-cn text-danger">購物車</span>
-                    </li>
-                    <li class="col-8 col-md-8">
-                        <span class="fs-6 ff-en text-danger">56</span>
-                    </li>
-                    <li class="col-4 col-md-4 mt-3">
-                        <span class="fs-6 ff-cn text-danger">我的收藏</span>
-                    </li>
-                    <li class="col-8 col-md-8 mt-3">
-                        <span class="fs-6 ff-en text-danger">23</span>
-                    </li>
-                    <li class="col-4 col-md-4 mt-3">
-                        <span class="fs-6 ff-cn text-danger">完成訂單</span>
-                    </li>
-                    <li class="col-8 col-md-8 mt-3">
-                        <span class="fs-6 ff-en text-danger">8</span>
-                    </li>
-                    <li class="col-4 col-md-4 mt-3">
-                        <span class="fs-6 ff-cn text-danger">會員紅利</span>
-                    </li>
-                    <li class="col-8 col-md-8 mt-3">
-                        <span class="fs-6 ff-en text-danger">2680</span>
-                    </li>
-                    <li class="col-4 col-md-4 mt-3">
-                        <span class="fs-6 ff-cn text-danger">邀請碼</span>
-                    </li>
-                    <li class="col-8 col-md-8 mt-3">
-                        <span class="fs-6 ff-en text-danger">TK2075</span>
-                    </li>
-                </ul>
-                <h2 class="new-user-color fs-14px">新戶輸入邀請碼即可獲贈紅利點數1000點</h2>
+                <table class="col-12 member-message">
+                    <thead colspan="2"></thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-4 col-md-4 fs-6 ff-cn text-danger">購物車</td>
+                            <td class="col-8 col-md-8 fs-6 ff-en text-danger">56</td>
+                        </tr>
+                        <tr>
+                            <td class="col-4 col-md-4 fs-6 ff-cn text-danger">我的收藏</td>
+                            <td class="col-8 col-md-8 fs-6 ff-en text-danger">23</td>
+                        </tr>
+                        <tr>
+                            <td class="col-4 col-md-4 fs-6 ff-cn text-danger">完成訂單</td>
+                            <td class="col-8 col-md-8 fs-6 ff-en text-danger">8</td>
+                        </tr>
+                        <tr>
+                            <td class="col-4 col-md-4 fs-6 ff-cn text-danger">會員紅利</td>
+                            <td class="col-8 col-md-8 fs-6 ff-en text-danger">2680</td>
+                        </tr>
+                        <tr>
+                            <td class="col-4 col-md-4 fs-6 ff-cn text-danger">邀請碼</td>
+                            <td class="col-8 col-md-8 fs-6 ff-en text-danger">TK2075</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="new-user-color fs-14px">新戶輸入邀請碼即可獲贈紅利點數1000點</p>
             </div>
         </div>
         <!-- top-menu (mobile) --> 
